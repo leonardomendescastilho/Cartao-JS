@@ -98,7 +98,7 @@ cardHolder.addEventListener('input', () => {
   const cardHolderValue = cardHolder.value;
   const onlyLettersRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ\s]*$/
   if (!onlyLettersRegex.test(cardHolderValue)) {
-    alert('Atenção! Nome do titular conter apenas letras.');
+    alert('Atenção! O nome do titular deve conter apenas letras.');
     cardHolder.value = '';
   }
   const ccHolder = document.querySelector('.cc-holder .value');
